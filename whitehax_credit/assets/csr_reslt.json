@@ -1,0 +1,1901 @@
+{
+	"providerViews": [{
+		"provider": "EFX",
+		"summary": {
+			"id": "1BR:5a50a66fc76d--759c-424abbea-66f969ca",
+			"reportGenerated": 1659624499000,
+			"creditFileSecurityFreezeFlag": false,
+			"reportType": "US_EFX",
+			"provider": "EFX",
+			"subject": {
+				"provider": "EFX",
+				"currentName": {
+					"lastName": "DZKPX",
+					"firstName": "JENNIFER",
+					"middleName": null,
+					"suffix": null
+				},
+				"aliases": [],
+				"currentAddress": {
+					"country": {
+						"code": "USA",
+						"name": null
+					},
+					"line1": "304 CHERRY ST",
+					"line2": null,
+					"line3": "BLANCHESTER",
+					"line4": "OH",
+					"line5": "45107",
+					"firstReportedDate": 1588291200000,
+					"lastReportedDate": 1657324800000,
+					"phone": null
+				},
+				"previousAddresses": [{
+						"country": {
+							"code": "USA",
+							"name": null
+						},
+						"line1": "124 ORCHARD VIEW LN",
+						"line2": null,
+						"line3": "BLANCHESTER",
+						"line4": "OH",
+						"line5": "45107",
+						"firstReportedDate": 1535760000000,
+						"lastReportedDate": 1535414400000,
+						"phone": null
+					},
+					{
+						"country": {
+							"code": "USA",
+							"name": null
+						},
+						"line1": "305 CHERRY ST",
+						"line2": null,
+						"line3": "BLANCHESTER",
+						"line4": "OH",
+						"line5": "45107",
+						"firstReportedDate": 1572566400000,
+						"lastReportedDate": 1572220800000,
+						"phone": null
+					},
+					{
+						"country": {
+							"code": "USA",
+							"name": null
+						},
+						"line1": "439 MORROW RD LOT 30",
+						"line2": null,
+						"line3": "SOUTH LEBANON",
+						"line4": "OH",
+						"line5": "45065",
+						"firstReportedDate": 1569888000000,
+						"lastReportedDate": 1569628800000,
+						"phone": null
+					},
+					{
+						"country": {
+							"code": "USA",
+							"name": null
+						},
+						"line1": "439 MARO RD",
+						"line2": null,
+						"line3": "SOUTH LEBANON",
+						"line4": "OH",
+						"line5": "45065",
+						"firstReportedDate": 1454284800000,
+						"lastReportedDate": 1477612800000,
+						"phone": null
+					}
+				],
+				"homePhone": null,
+				"mobilePhone": null,
+				"nationalIdentifier": "xxxxx 0591",
+				"dateOfBirth": 477187200000,
+				"dateOfDeath": null,
+				"employmentHistory": [{
+					"employerName": "FOUR SEASON GARMENT",
+					"employeeTitle": null,
+					"currentEmployer": true,
+					"ordinal": 1,
+					"dateOfEmployment": null,
+					"address": null
+				}]
+			},
+			"creditScore": {
+				"score": 750,
+				"provider": "EFX",
+				"scoreRanges": [{
+						"low": 300,
+						"high": 599,
+						"name": "Poor"
+					},
+					{
+						"low": 600,
+						"high": 660,
+						"name": "Fair"
+					},
+					{
+						"low": 661,
+						"high": 715,
+						"name": "Good"
+					},
+					{
+						"low": 716,
+						"high": 747,
+						"name": "Very Good"
+					},
+					{
+						"low": 748,
+						"high": 850,
+						"name": "Excellent"
+					}
+				],
+				"loanRiskRanges": [{
+						"low": 300,
+						"high": 599,
+						"name": "Very High Risk"
+					},
+					{
+						"low": 600,
+						"high": 660,
+						"name": "High Risk"
+					},
+					{
+						"low": 661,
+						"high": 715,
+						"name": "Medium Risk"
+					},
+					{
+						"low": 716,
+						"high": 747,
+						"name": "Low Risk"
+					},
+					{
+						"low": 748,
+						"high": 850,
+						"name": "Very Low Risk"
+					}
+				],
+				"scoreReasons": [{
+						"code": "00098",
+						"description": "There is a bankruptcy on your credit report",
+						"creditScoreFactorEffect": "HURTING"
+					},
+					{
+						"code": "00015",
+						"description": "Newest delinquent or derogatory payment status on your accounts is too recent",
+						"creditScoreFactorEffect": "HURTING"
+					},
+					{
+						"code": "00004",
+						"description": "The balances on your accounts are too high compared to loan amounts",
+						"creditScoreFactorEffect": "HURTING"
+					},
+					{
+						"code": "00008",
+						"description": "You have either very few loans or too many loans with recent delinquencies",
+						"creditScoreFactorEffect": "HURTING"
+					}
+				]
+			},
+			"revolvingAccounts": {
+				"balance": {
+					"amount": 400.0,
+					"currency": "USD"
+				},
+				"creditLimit": null,
+				"available": null,
+				"monthlyPaymentAmount": {
+					"amount": 900.0,
+					"currency": "USD"
+				},
+				"debtToCreditRatio": 0.0,
+				"totalAccounts": 0,
+				"totalNegativeAccounts": 0,
+				"totalAccountsWithBalance": 0
+			},
+			"mortgageAccounts": {
+				"balance": {
+					"amount": 100.0,
+					"currency": "USD"
+				},
+				"creditLimit": null,
+				"available": null,
+				"monthlyPaymentAmount": {
+					"amount": 50.0,
+					"currency": "USD"
+				},
+				"debtToCreditRatio": 0.0,
+				"totalAccounts": 0,
+				"totalNegativeAccounts": 0,
+				"totalAccountsWithBalance": 0
+			},
+			"installmentAccounts": {
+				"balance": {
+					"amount": 9995.0,
+					"currency": "USD"
+				},
+				"creditLimit": {
+					"amount": 10765.0,
+					"currency": "USD"
+				},
+				"available": {
+					"amount": 770.0,
+					"currency": "USD"
+				},
+				"monthlyPaymentAmount": {
+					"amount": 405.0,
+					"currency": "USD"
+				},
+				"debtToCreditRatio": 93.0,
+				"totalAccounts": 1,
+				"totalNegativeAccounts": 0,
+				"totalAccountsWithBalance": 1
+			},
+			"otherAccounts": {
+				"balance": {
+					"amount": 0.0,
+					"currency": "USD"
+				},
+				"creditLimit": null,
+				"available": null,
+				"monthlyPaymentAmount": {
+					"amount": 0.0,
+					"currency": "USD"
+				},
+				"debtToCreditRatio": 0.0,
+				"totalAccounts": 0,
+				"totalNegativeAccounts": 0,
+				"totalAccountsWithBalance": 0
+			},
+			"totalOpenAccounts": {
+				"balance": {
+					"amount": 9995.0,
+					"currency": "USD"
+				},
+				"creditLimit": {
+					"amount": 10765.0,
+					"currency": "USD"
+				},
+				"available": {
+					"amount": 770.0,
+					"currency": "USD"
+				},
+				"monthlyPaymentAmount": {
+					"amount": 405.0,
+					"currency": "USD"
+				},
+				"debtToCreditRatio": 93.0,
+				"totalAccounts": 1,
+				"totalNegativeAccounts": 0,
+				"totalAccountsWithBalance": 1
+			},
+			"lengthOfCreditHistoryMonths": 119,
+			"totalNegativeAccounts": 14,
+			"averageAccountAgeMonths": 54,
+			"oldestAccountOpenDate": 1356998400000,
+			"oldestAccountName": "MID OHIO FINANCE",
+			"mostRecentAccountOpenDate": 1643673600000,
+			"mostRecentAccountName": "US BANK",
+			"totalConsumerStatements": 0,
+			"mostRecentInquiryDate": 1657929600000,
+			"mostRecentInquiryName": "AMERICREDIT FINANCIAL SERVICES",
+			"totalPersonalInformation": 7,
+			"totalInquires": 4,
+			"totalPublicRecords": 2,
+			"totalCollections": 1,
+			"disputeInformation": {
+				"contactName": "Equifax Information Services, LLC",
+				"address": {
+					"country": null,
+					"line1": "PO Box 740256",
+					"line2": null,
+					"line3": "Atlanta",
+					"line4": "GA",
+					"line5": "30374",
+					"firstReportedDate": null,
+					"lastReportedDate": null,
+					"phone": null
+				},
+				"phone": {
+					"countryCode": "1",
+					"areaCode": "800",
+					"exchange": "525",
+					"extension": "6285"
+				}
+			}
+		},
+		"revolvingAccounts": [{
+				"provider": "EFX",
+				"id": "670063614",
+				"accountOpen": false,
+				"accountName": "CAPITAL ONE",
+				"contactInformation": {
+					"contactName": "CAPITAL ONE",
+					"address": {
+						"country": {
+							"code": "USA",
+							"name": null
+						},
+						"line1": "PO BOX 5253",
+						"line2": null,
+						"line3": "CAROL STREAM",
+						"line4": "IL",
+						"line5": "60197",
+						"firstReportedDate": null,
+						"lastReportedDate": null,
+						"phone": null
+					},
+					"phone": {
+						"countryCode": "1",
+						"areaCode": "800",
+						"exchange": "477",
+						"extension": "6000"
+					}
+				},
+				"accountNumber": "xxxxxx 00",
+				"accountStatus": "INCLUDED_IN_BANKRUPTCY",
+				"paymentResponsibility": "INDIVIDUAL",
+				"highCreditAmount": null,
+				"accountType": "REVOLVING",
+				"creditLimitAmount": null,
+				"termDurationMonths": 0,
+				"termFrequency": "UNKNOWN",
+				"dateOpened": 1548979200000,
+				"balanceAmount": null,
+				"reportedDate": 1640995200000,
+				"pastDueAmount": null,
+				"lastPaymentDate": null,
+				"actualPayment": null,
+				"monthlyPayment": null,
+				"lastActivityDate": null,
+				"majorDelinquencyFirstReportedDate": 1633046400000,
+				"monthsReviewed": 35,
+				"creditorClassification": "UNKNOWN",
+				"activityDesignator": "CLOSED",
+				"chargeOffAmount": null,
+				"deferredPaymentStartDate": null,
+				"balloonPaymentAmount": null,
+				"balloonPaymentDate": null,
+				"dateClosed": null,
+				"loanType": {
+					"code": "CREDIT_CARD",
+					"description": "Credit Card"
+				},
+				"firstDelinquencyDate": 1633046400000,
+				"comments": [{
+						"code": "IL",
+						"description": "Bankruptcy chapter 7"
+					},
+					{
+						"code": "CW",
+						"description": "Account closed by credit grantor"
+					}
+				],
+				"paymentHistory": [],
+				"trendedDataHistory": {
+					"name": null,
+					"trendedDataList": null
+				},
+				"isNegative": true
+			},
+			{
+				"provider": "EFX",
+				"id": "838355240",
+				"accountOpen": false,
+				"accountName": "CAPITAL ONE BANK USA NA",
+				"contactInformation": {
+					"contactName": "CAPITAL ONE BANK USA NA",
+					"address": {
+						"country": {
+							"code": "USA",
+							"name": null
+						},
+						"line1": "PO BOX 85015",
+						"line2": null,
+						"line3": "RICHMOND",
+						"line4": "VA",
+						"line5": "232855075",
+						"firstReportedDate": null,
+						"lastReportedDate": null,
+						"phone": null
+					},
+					"phone": {
+						"countryCode": "1",
+						"areaCode": "800",
+						"exchange": "955",
+						"extension": "7070"
+					}
+				},
+				"accountNumber": "xxxxx 2639",
+				"accountStatus": "INCLUDED_IN_CHAPTER_13",
+				"paymentResponsibility": "INDIVIDUAL",
+				"highCreditAmount": null,
+				"accountType": "REVOLVING",
+				"creditLimitAmount": null,
+				"termDurationMonths": 0,
+				"termFrequency": "UNKNOWN",
+				"dateOpened": 1422748800000,
+				"balanceAmount": {
+					"amount": 0.0,
+					"currency": "USD"
+				},
+				"reportedDate": 1493596800000,
+				"pastDueAmount": {
+					"amount": 0.0,
+					"currency": "USD"
+				},
+				"lastPaymentDate": 1493596800000,
+				"actualPayment": null,
+				"monthlyPayment": null,
+				"lastActivityDate": null,
+				"majorDelinquencyFirstReportedDate": 1493596800000,
+				"monthsReviewed": 27,
+				"creditorClassification": "UNKNOWN",
+				"activityDesignator": "UNKNOWN",
+				"chargeOffAmount": null,
+				"deferredPaymentStartDate": null,
+				"balloonPaymentAmount": null,
+				"balloonPaymentDate": null,
+				"dateClosed": null,
+				"loanType": {
+					"code": "CREDIT_CARD",
+					"description": "Credit Card"
+				},
+				"firstDelinquencyDate": 1464739200000,
+				"comments": [{
+						"code": "DO",
+						"description": "Bankruptcy chapter 13"
+					},
+					{
+						"code": "CW",
+						"description": "Account closed by credit grantor"
+					},
+					{
+						"code": "KD",
+						"description": "Bankruptcy completed"
+					}
+				],
+				"paymentHistory": [{
+						"year": 2017,
+						"january": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"february": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"march": {
+							"monthType": "NEGATIVE",
+							"value": "DAYSLATE_30"
+						},
+						"april": {
+							"monthType": "NEGATIVE",
+							"value": "DAYSLATE_60"
+						},
+						"may": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"june": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"july": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"august": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"september": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"october": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"november": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"december": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						}
+					},
+					{
+						"year": 2016,
+						"january": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"february": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"march": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"april": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"may": {
+							"monthType": "NEGATIVE",
+							"value": "DAYSLATE_30"
+						},
+						"june": {
+							"monthType": "NEGATIVE",
+							"value": "DAYSLATE_60"
+						},
+						"july": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"august": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"september": {
+							"monthType": "NEGATIVE",
+							"value": "DAYSLATE_30"
+						},
+						"october": {
+							"monthType": "NEGATIVE",
+							"value": "DAYSLATE_60"
+						},
+						"november": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"december": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						}
+					},
+					{
+						"year": 2015,
+						"january": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"february": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"march": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"april": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"may": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"june": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"july": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"august": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"september": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"october": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"november": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"december": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						}
+					}
+				],
+				"trendedDataHistory": {
+					"name": null,
+					"trendedDataList": null
+				},
+				"isNegative": true
+			},
+			{
+				"provider": "EFX",
+				"id": "998959863",
+				"accountOpen": false,
+				"accountName": "CREDIT ONE BANK",
+				"contactInformation": {
+					"contactName": "CREDIT ONE BANK",
+					"address": {
+						"country": {
+							"code": "USA",
+							"name": null
+						},
+						"line1": "6801 S. CIMARRON ROAD",
+						"line2": null,
+						"line3": "LAS VEGAS",
+						"line4": "NV",
+						"line5": "89113",
+						"firstReportedDate": null,
+						"lastReportedDate": null,
+						"phone": null
+					},
+					"phone": {
+						"countryCode": "1",
+						"areaCode": "877",
+						"exchange": "825",
+						"extension": "3242"
+					}
+				},
+				"accountNumber": "xxxxxxxxx 5000",
+				"accountStatus": "INCLUDED_IN_BANKRUPTCY",
+				"paymentResponsibility": "INDIVIDUAL",
+				"highCreditAmount": null,
+				"accountType": "REVOLVING",
+				"creditLimitAmount": null,
+				"termDurationMonths": 0,
+				"termFrequency": "UNKNOWN",
+				"dateOpened": 1596240000000,
+				"balanceAmount": null,
+				"reportedDate": 1654041600000,
+				"pastDueAmount": null,
+				"lastPaymentDate": null,
+				"actualPayment": null,
+				"monthlyPayment": null,
+				"lastActivityDate": null,
+				"majorDelinquencyFirstReportedDate": 1635724800000,
+				"monthsReviewed": 21,
+				"creditorClassification": "UNKNOWN",
+				"activityDesignator": "TRANSFER_OR_SOLD",
+				"chargeOffAmount": null,
+				"deferredPaymentStartDate": null,
+				"balloonPaymentAmount": null,
+				"balloonPaymentDate": null,
+				"dateClosed": null,
+				"loanType": {
+					"code": "CREDIT_CARD",
+					"description": "Credit Card"
+				},
+				"firstDelinquencyDate": 1635724800000,
+				"comments": [{
+					"code": "IL",
+					"description": "Bankruptcy chapter 7"
+				}],
+				"paymentHistory": [],
+				"trendedDataHistory": {
+					"name": null,
+					"trendedDataList": null
+				},
+				"isNegative": true
+			},
+			{
+				"provider": "EFX",
+				"id": "1955670979",
+				"accountOpen": false,
+				"accountName": "MIDNIGHT",
+				"contactInformation": {
+					"contactName": "MIDNIGHT",
+					"address": {
+						"country": {
+							"code": "USA",
+							"name": null
+						},
+						"line1": "1112 7TH AVE",
+						"line2": null,
+						"line3": "MONROE",
+						"line4": "WI",
+						"line5": "535661364",
+						"firstReportedDate": null,
+						"lastReportedDate": null,
+						"phone": null
+					},
+					"phone": null
+				},
+				"accountNumber": "xxxxxxxxx 4000",
+				"accountStatus": "INCLUDED_IN_BANKRUPTCY",
+				"paymentResponsibility": "INDIVIDUAL",
+				"highCreditAmount": null,
+				"accountType": "REVOLVING",
+				"creditLimitAmount": null,
+				"termDurationMonths": 0,
+				"termFrequency": "UNKNOWN",
+				"dateOpened": 1588291200000,
+				"balanceAmount": null,
+				"reportedDate": 1638057600000,
+				"pastDueAmount": null,
+				"lastPaymentDate": null,
+				"actualPayment": null,
+				"monthlyPayment": null,
+				"lastActivityDate": null,
+				"majorDelinquencyFirstReportedDate": 1635724800000,
+				"monthsReviewed": 0,
+				"creditorClassification": "UNKNOWN",
+				"activityDesignator": "UNKNOWN",
+				"chargeOffAmount": null,
+				"deferredPaymentStartDate": null,
+				"balloonPaymentAmount": null,
+				"balloonPaymentDate": null,
+				"dateClosed": null,
+				"loanType": {
+					"code": "CHARGE_ACCOUNT",
+					"description": "Charge Account"
+				},
+				"firstDelinquencyDate": 1622505600000,
+				"comments": [{
+						"code": "IL",
+						"description": "Bankruptcy chapter 7"
+					},
+					{
+						"code": "KC",
+						"description": "Bankruptcy discharged"
+					}
+				],
+				"paymentHistory": [],
+				"trendedDataHistory": {
+					"name": null,
+					"trendedDataList": null
+				},
+				"isNegative": true
+			},
+			{
+				"provider": "EFX",
+				"id": "208039360",
+				"accountOpen": false,
+				"accountName": "SEVENTH AVENUE",
+				"contactInformation": {
+					"contactName": "SEVENTH AVENUE",
+					"address": {
+						"country": {
+							"code": "USA",
+							"name": null
+						},
+						"line1": "1112 7TH AVE",
+						"line2": null,
+						"line3": "MONROE",
+						"line4": "WI",
+						"line5": "535661364",
+						"firstReportedDate": null,
+						"lastReportedDate": null,
+						"phone": null
+					},
+					"phone": null
+				},
+				"accountNumber": "xxxxxxxxx 4000",
+				"accountStatus": "INCLUDED_IN_BANKRUPTCY",
+				"paymentResponsibility": "INDIVIDUAL",
+				"highCreditAmount": null,
+				"accountType": "REVOLVING",
+				"creditLimitAmount": null,
+				"termDurationMonths": 0,
+				"termFrequency": "UNKNOWN",
+				"dateOpened": 1575158400000,
+				"balanceAmount": null,
+				"reportedDate": 1638057600000,
+				"pastDueAmount": null,
+				"lastPaymentDate": null,
+				"actualPayment": null,
+				"monthlyPayment": null,
+				"lastActivityDate": null,
+				"majorDelinquencyFirstReportedDate": 1635724800000,
+				"monthsReviewed": 0,
+				"creditorClassification": "UNKNOWN",
+				"activityDesignator": "UNKNOWN",
+				"chargeOffAmount": null,
+				"deferredPaymentStartDate": null,
+				"balloonPaymentAmount": null,
+				"balloonPaymentDate": null,
+				"dateClosed": null,
+				"loanType": {
+					"code": "CHARGE_ACCOUNT",
+					"description": "Charge Account"
+				},
+				"firstDelinquencyDate": 1622505600000,
+				"comments": [{
+						"code": "IL",
+						"description": "Bankruptcy chapter 7"
+					},
+					{
+						"code": "KC",
+						"description": "Bankruptcy discharged"
+					}
+				],
+				"paymentHistory": [],
+				"trendedDataHistory": {
+					"name": null,
+					"trendedDataList": null
+				},
+				"isNegative": true
+			},
+			{
+				"provider": "EFX",
+				"id": "423100743",
+				"accountOpen": false,
+				"accountName": "SPIEGEL",
+				"contactInformation": {
+					"contactName": "SPIEGEL",
+					"address": {
+						"country": {
+							"code": "USA",
+							"name": null
+						},
+						"line1": "PO BOX 9204",
+						"line2": null,
+						"line3": "OLD BETHPAGE",
+						"line4": "NY",
+						"line5": "11804",
+						"firstReportedDate": null,
+						"lastReportedDate": null,
+						"phone": null
+					},
+					"phone": {
+						"countryCode": "1",
+						"areaCode": "516",
+						"exchange": "576",
+						"extension": "8706"
+					}
+				},
+				"accountNumber": "xxxxxxxx 8000",
+				"accountStatus": "INCLUDED_IN_BANKRUPTCY",
+				"paymentResponsibility": "INDIVIDUAL",
+				"highCreditAmount": null,
+				"accountType": "REVOLVING",
+				"creditLimitAmount": null,
+				"termDurationMonths": 0,
+				"termFrequency": "UNKNOWN",
+				"dateOpened": 1456790400000,
+				"balanceAmount": null,
+				"reportedDate": 1638057600000,
+				"pastDueAmount": null,
+				"lastPaymentDate": null,
+				"actualPayment": null,
+				"monthlyPayment": null,
+				"lastActivityDate": null,
+				"majorDelinquencyFirstReportedDate": 1635724800000,
+				"monthsReviewed": 0,
+				"creditorClassification": "UNKNOWN",
+				"activityDesignator": "UNKNOWN",
+				"chargeOffAmount": null,
+				"deferredPaymentStartDate": null,
+				"balloonPaymentAmount": null,
+				"balloonPaymentDate": null,
+				"dateClosed": null,
+				"loanType": {
+					"code": "CREDIT_CARD",
+					"description": "Credit Card"
+				},
+				"firstDelinquencyDate": 1488326400000,
+				"comments": [{
+						"code": "IL",
+						"description": "Bankruptcy chapter 7"
+					},
+					{
+						"code": "KC",
+						"description": "Bankruptcy discharged"
+					}
+				],
+				"paymentHistory": [],
+				"trendedDataHistory": {
+					"name": null,
+					"trendedDataList": null
+				},
+				"isNegative": true
+			},
+			{
+				"provider": "EFX",
+				"id": "1070252791",
+				"accountOpen": false,
+				"accountName": "WASHMUTUAL/PROVIDIAN",
+				"contactInformation": {
+					"contactName": "WASHMUTUAL/PROVIDIAN",
+					"address": {
+						"country": {
+							"code": "USA",
+							"name": null
+						},
+						"line1": "PO BOX 660509",
+						"line2": null,
+						"line3": "DALLAS",
+						"line4": "TX",
+						"line5": "752660509",
+						"firstReportedDate": null,
+						"lastReportedDate": null,
+						"phone": null
+					},
+					"phone": null
+				},
+				"accountNumber": "xxxxx 00",
+				"accountStatus": "INCLUDED_IN_BANKRUPTCY",
+				"paymentResponsibility": "INDIVIDUAL",
+				"highCreditAmount": null,
+				"accountType": "REVOLVING",
+				"creditLimitAmount": null,
+				"termDurationMonths": 0,
+				"termFrequency": "UNKNOWN",
+				"dateOpened": 1596240000000,
+				"balanceAmount": null,
+				"reportedDate": 1640995200000,
+				"pastDueAmount": null,
+				"lastPaymentDate": null,
+				"actualPayment": null,
+				"monthlyPayment": null,
+				"lastActivityDate": null,
+				"majorDelinquencyFirstReportedDate": 1630454400000,
+				"monthsReviewed": 17,
+				"creditorClassification": "UNKNOWN",
+				"activityDesignator": "TRANSFER_OR_SOLD",
+				"chargeOffAmount": null,
+				"deferredPaymentStartDate": null,
+				"balloonPaymentAmount": null,
+				"balloonPaymentDate": null,
+				"dateClosed": null,
+				"loanType": {
+					"code": "CREDIT_CARD",
+					"description": "Credit Card"
+				},
+				"firstDelinquencyDate": 1630454400000,
+				"comments": [{
+					"code": "IL",
+					"description": "Bankruptcy chapter 7"
+				}],
+				"paymentHistory": [],
+				"trendedDataHistory": {
+					"name": null,
+					"trendedDataList": null
+				},
+				"isNegative": true
+			},
+			{
+				"provider": "EFX",
+				"id": "2141474665",
+				"accountOpen": false,
+				"accountName": "WASHMUTUAL/PROVIDIAN",
+				"contactInformation": {
+					"contactName": "WASHMUTUAL/PROVIDIAN",
+					"address": {
+						"country": {
+							"code": "USA",
+							"name": null
+						},
+						"line1": "PO BOX 660509",
+						"line2": null,
+						"line3": "DALLAS",
+						"line4": "TX",
+						"line5": "752660509",
+						"firstReportedDate": null,
+						"lastReportedDate": null,
+						"phone": null
+					},
+					"phone": null
+				},
+				"accountNumber": "xxxxx 00",
+				"accountStatus": "PAYS_AS_AGREED",
+				"paymentResponsibility": "UNDESIGNATED",
+				"highCreditAmount": {
+					"amount": 1668.0,
+					"currency": "USD"
+				},
+				"accountType": "REVOLVING",
+				"creditLimitAmount": {
+					"amount": 1500.0,
+					"currency": "USD"
+				},
+				"termDurationMonths": 0,
+				"termFrequency": "MONTHLY",
+				"dateOpened": 1593561600000,
+				"balanceAmount": {
+					"amount": 0.0,
+					"currency": "USD"
+				},
+				"reportedDate": 1622505600000,
+				"pastDueAmount": null,
+				"lastPaymentDate": 1622505600000,
+				"actualPayment": {
+					"amount": 50.0,
+					"currency": "USD"
+				},
+				"monthlyPayment": null,
+				"lastActivityDate": 1622505600000,
+				"majorDelinquencyFirstReportedDate": null,
+				"monthsReviewed": 10,
+				"creditorClassification": "UNKNOWN",
+				"activityDesignator": "TRANSFER_OR_SOLD",
+				"chargeOffAmount": null,
+				"deferredPaymentStartDate": null,
+				"balloonPaymentAmount": null,
+				"balloonPaymentDate": null,
+				"dateClosed": null,
+				"loanType": {
+					"code": "CREDIT_CARD",
+					"description": "Credit Card"
+				},
+				"firstDelinquencyDate": null,
+				"comments": [],
+				"paymentHistory": [{
+						"year": 2021,
+						"january": {
+							"monthType": "POSITIVE",
+							"value": "PAYS_AS_AGREED"
+						},
+						"february": {
+							"monthType": "POSITIVE",
+							"value": "PAYS_AS_AGREED"
+						},
+						"march": {
+							"monthType": "POSITIVE",
+							"value": "PAYS_AS_AGREED"
+						},
+						"april": {
+							"monthType": "POSITIVE",
+							"value": "PAYS_AS_AGREED"
+						},
+						"may": {
+							"monthType": "POSITIVE",
+							"value": "PAYS_AS_AGREED"
+						},
+						"june": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"july": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"august": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"september": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"october": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"november": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"december": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						}
+					},
+					{
+						"year": 2020,
+						"january": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"february": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"march": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"april": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"may": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"june": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"july": {
+							"monthType": "NO_DATA",
+							"value": "UNAVAILABLE"
+						},
+						"august": {
+							"monthType": "POSITIVE",
+							"value": "PAYS_AS_AGREED"
+						},
+						"september": {
+							"monthType": "POSITIVE",
+							"value": "PAYS_AS_AGREED"
+						},
+						"october": {
+							"monthType": "POSITIVE",
+							"value": "PAYS_AS_AGREED"
+						},
+						"november": {
+							"monthType": "POSITIVE",
+							"value": "PAYS_AS_AGREED"
+						},
+						"december": {
+							"monthType": "NEGATIVE",
+							"value": "DAYSLATE_30"
+						}
+					}
+				],
+				"trendedDataHistory": {
+					"name": null,
+					"trendedDataList": null
+				},
+				"isNegative": true
+			}
+		],
+		"mortgageAccounts": [{
+				"provider": "EFX",
+				"id": "1082892033",
+				"accountOpen": false,
+				"accountName": "CELINK",
+				"contactInformation": {
+					"contactName": "CELINK",
+					"address": {
+						"country": {
+							"code": "USA",
+							"name": null
+						},
+						"line1": "3900 CAPITAL CITY BLVD",
+						"line2": null,
+						"line3": "LANSING",
+						"line4": "MI",
+						"line5": "48906",
+						"firstReportedDate": null,
+						"lastReportedDate": null,
+						"phone": null
+					},
+					"phone": {
+						"countryCode": "1",
+						"areaCode": "517",
+						"exchange": "323",
+						"extension": "4134"
+					}
+				},
+				"accountNumber": "xxxxxxxxxxxxx 1000",
+				"accountStatus": "PAYS_AS_AGREED",
+				"paymentResponsibility": "JOINT_CONTRACTUAL_LIABILITY",
+				"highCreditAmount": {
+					"amount": 19448.0,
+					"currency": "USD"
+				},
+				"accountType": "MORTGAGE",
+				"creditLimitAmount": null,
+				"termDurationMonths": 1,
+				"termFrequency": "MONTHLY",
+				"dateOpened": 1356998400000,
+				"balanceAmount": {
+					"amount": 0.0,
+					"currency": "USD"
+				},
+				"reportedDate": 1535760000000,
+				"pastDueAmount": null,
+				"lastPaymentDate": 1533081600000,
+				"actualPayment": null,
+				"monthlyPayment": null,
+				"lastActivityDate": 1533081600000,
+				"majorDelinquencyFirstReportedDate": null,
+				"monthsReviewed": 11,
+				"creditorClassification": "UNKNOWN",
+				"activityDesignator": "TRANSFER_OR_SOLD",
+				"chargeOffAmount": null,
+				"deferredPaymentStartDate": null,
+				"balloonPaymentAmount": null,
+				"balloonPaymentDate": null,
+				"dateClosed": null,
+				"loanType": {
+					"code": "MANUFACTURED_HOUSING",
+					"description": "Manufactured Housing"
+				},
+				"firstDelinquencyDate": null,
+				"comments": [],
+				"paymentHistory": [],
+				"trendedDataHistory": {
+					"name": null,
+					"trendedDataList": null
+				},
+				"isNegative": false
+			},
+			{
+				"provider": "EFX",
+				"id": "753079500",
+				"accountOpen": false,
+				"accountName": "MID OHIO FINANCE",
+				"contactInformation": {
+					"contactName": "MID OHIO FINANCE",
+					"address": {
+						"country": {
+							"code": "USA",
+							"name": null
+						},
+						"line1": "2015 STONERIDGE DR",
+						"line2": null,
+						"line3": "CIRCLEVILLE",
+						"line4": "OH",
+						"line5": "431138956",
+						"firstReportedDate": null,
+						"lastReportedDate": null,
+						"phone": null
+					},
+					"phone": {
+						"countryCode": "1",
+						"areaCode": "740",
+						"exchange": "474",
+						"extension": "5710"
+					}
+				},
+				"accountNumber": "xxxx",
+				"accountStatus": "INCLUDED_IN_BANKRUPTCY",
+				"paymentResponsibility": "UNDESIGNATED",
+				"highCreditAmount": null,
+				"accountType": "MORTGAGE",
+				"creditLimitAmount": null,
+				"termDurationMonths": 0,
+				"termFrequency": "UNKNOWN",
+				"dateOpened": 1356998400000,
+				"balanceAmount": null,
+				"reportedDate": 1638057600000,
+				"pastDueAmount": null,
+				"lastPaymentDate": null,
+				"actualPayment": null,
+				"monthlyPayment": null,
+				"lastActivityDate": null,
+				"majorDelinquencyFirstReportedDate": 1635724800000,
+				"monthsReviewed": 0,
+				"creditorClassification": "UNKNOWN",
+				"activityDesignator": "UNKNOWN",
+				"chargeOffAmount": null,
+				"deferredPaymentStartDate": null,
+				"balloonPaymentAmount": null,
+				"balloonPaymentDate": null,
+				"dateClosed": null,
+				"loanType": {
+					"code": "MANUFACTURED_HOUSING",
+					"description": "Manufactured Housing"
+				},
+				"firstDelinquencyDate": 1630454400000,
+				"comments": [{
+						"code": "IL",
+						"description": "Bankruptcy chapter 7"
+					},
+					{
+						"code": "KC",
+						"description": "Bankruptcy discharged"
+					}
+				],
+				"paymentHistory": [],
+				"trendedDataHistory": {
+					"name": null,
+					"trendedDataList": null
+				},
+				"isNegative": true
+			}
+		],
+		"installmentAccounts": [{
+				"provider": "EFX",
+				"id": "439885994",
+				"accountOpen": false,
+				"accountName": "CITIFINANCIAL AUTO",
+				"contactInformation": {
+					"contactName": "CITIFINANCIAL AUTO",
+					"address": {
+						"country": {
+							"code": "USA",
+							"name": null
+						},
+						"line1": "4000 REGENT BLVD",
+						"line2": null,
+						"line3": "IRVING",
+						"line4": "TX",
+						"line5": "75063",
+						"firstReportedDate": null,
+						"lastReportedDate": null,
+						"phone": null
+					},
+					"phone": {
+						"countryCode": "1",
+						"areaCode": "469",
+						"exchange": "220",
+						"extension": "4705"
+					}
+				},
+				"accountNumber": "xxxxx 00",
+				"accountStatus": "INCLUDED_IN_BANKRUPTCY",
+				"paymentResponsibility": "JOINT_CONTRACTUAL_LIABILITY",
+				"highCreditAmount": null,
+				"accountType": "INSTALLMENT",
+				"creditLimitAmount": null,
+				"termDurationMonths": 0,
+				"termFrequency": "UNKNOWN",
+				"dateOpened": 1593561600000,
+				"balanceAmount": null,
+				"reportedDate": 1654041600000,
+				"pastDueAmount": null,
+				"lastPaymentDate": null,
+				"actualPayment": null,
+				"monthlyPayment": null,
+				"lastActivityDate": null,
+				"majorDelinquencyFirstReportedDate": 1633046400000,
+				"monthsReviewed": 23,
+				"creditorClassification": "UNKNOWN",
+				"activityDesignator": "UNKNOWN",
+				"chargeOffAmount": null,
+				"deferredPaymentStartDate": null,
+				"balloonPaymentAmount": null,
+				"balloonPaymentDate": null,
+				"dateClosed": null,
+				"loanType": {
+					"code": "AUTO",
+					"description": "Auto"
+				},
+				"firstDelinquencyDate": 1633046400000,
+				"comments": [{
+					"code": "IL",
+					"description": "Bankruptcy chapter 7"
+				}],
+				"paymentHistory": [],
+				"trendedDataHistory": {
+					"name": null,
+					"trendedDataList": null
+				},
+				"isNegative": true
+			},
+			{
+				"provider": "EFX",
+				"id": "1073681004",
+				"accountOpen": false,
+				"accountName": "INSTANT AUTO CREDIT INC",
+				"contactInformation": {
+					"contactName": "INSTANT AUTO CREDIT INC",
+					"address": {
+						"country": {
+							"code": "USA",
+							"name": null
+						},
+						"line1": "8103 PRESTON HWY",
+						"line2": null,
+						"line3": "LOUISVILLE",
+						"line4": "KY",
+						"line5": "40219",
+						"firstReportedDate": null,
+						"lastReportedDate": null,
+						"phone": null
+					},
+					"phone": {
+						"countryCode": "1",
+						"areaCode": "502",
+						"exchange": "968",
+						"extension": "9700"
+					}
+				},
+				"accountNumber": "xxxxx 01",
+				"accountStatus": "INCLUDED_IN_CHAPTER_13",
+				"paymentResponsibility": "JOINT_CONTRACTUAL_LIABILITY",
+				"highCreditAmount": null,
+				"accountType": "INSTALLMENT",
+				"creditLimitAmount": null,
+				"termDurationMonths": 0,
+				"termFrequency": "UNKNOWN",
+				"dateOpened": 1409529600000,
+				"balanceAmount": {
+					"amount": 0.0,
+					"currency": "USD"
+				},
+				"reportedDate": 1493596800000,
+				"pastDueAmount": {
+					"amount": 0.0,
+					"currency": "USD"
+				},
+				"lastPaymentDate": 1493596800000,
+				"actualPayment": null,
+				"monthlyPayment": null,
+				"lastActivityDate": null,
+				"majorDelinquencyFirstReportedDate": null,
+				"monthsReviewed": 32,
+				"creditorClassification": "UNKNOWN",
+				"activityDesignator": "UNKNOWN",
+				"chargeOffAmount": null,
+				"deferredPaymentStartDate": null,
+				"balloonPaymentAmount": null,
+				"balloonPaymentDate": null,
+				"dateClosed": 1493596800000,
+				"loanType": {
+					"code": "AUTO",
+					"description": "Auto"
+				},
+				"firstDelinquencyDate": 1493596800000,
+				"comments": [{
+						"code": "DO",
+						"description": "Bankruptcy chapter 13"
+					},
+					{
+						"code": "KD",
+						"description": "Bankruptcy completed"
+					}
+				],
+				"paymentHistory": [],
+				"trendedDataHistory": {
+					"name": null,
+					"trendedDataList": null
+				},
+				"isNegative": true
+			},
+			{
+				"provider": "EFX",
+				"id": "2072234959",
+				"accountOpen": true,
+				"accountName": "US BANK",
+				"contactInformation": {
+					"contactName": "US BANK",
+					"address": {
+						"country": {
+							"code": "USA",
+							"name": null
+						},
+						"line1": "425 WALNUT ST",
+						"line2": null,
+						"line3": "CINCINNATI",
+						"line4": "OH",
+						"line5": "45202",
+						"firstReportedDate": null,
+						"lastReportedDate": null,
+						"phone": null
+					},
+					"phone": {
+						"countryCode": "1",
+						"areaCode": "800",
+						"exchange": "331",
+						"extension": "4738"
+					}
+				},
+				"accountNumber": "xxxxx",
+				"accountStatus": "PAYS_AS_AGREED",
+				"paymentResponsibility": "UNDESIGNATED",
+				"highCreditAmount": {
+					"amount": 10765.0,
+					"currency": "USD"
+				},
+				"accountType": "INSTALLMENT",
+				"creditLimitAmount": null,
+				"termDurationMonths": 3,
+				"termFrequency": "MONTHLY",
+				"dateOpened": 1643673600000,
+				"balanceAmount": {
+					"amount": 9995.0,
+					"currency": "USD"
+				},
+				"reportedDate": 1654041600000,
+				"pastDueAmount": null,
+				"lastPaymentDate": 1654041600000,
+				"actualPayment": {
+					"amount": 425.0,
+					"currency": "USD"
+				},
+				"monthlyPayment": {
+					"amount": 405.0,
+					"currency": "USD"
+				},
+				"lastActivityDate": 1654041600000,
+				"majorDelinquencyFirstReportedDate": null,
+				"monthsReviewed": 4,
+				"creditorClassification": "UNKNOWN",
+				"activityDesignator": "UNKNOWN",
+				"chargeOffAmount": null,
+				"deferredPaymentStartDate": null,
+				"balloonPaymentAmount": null,
+				"balloonPaymentDate": null,
+				"dateClosed": null,
+				"loanType": {
+					"code": "AUTO",
+					"description": "Auto"
+				},
+				"firstDelinquencyDate": null,
+				"comments": [],
+				"paymentHistory": [{
+					"year": 2022,
+					"january": {
+						"monthType": "NO_DATA",
+						"value": "UNAVAILABLE"
+					},
+					"february": {
+						"monthType": "POSITIVE",
+						"value": "PAYS_AS_AGREED"
+					},
+					"march": {
+						"monthType": "POSITIVE",
+						"value": "PAYS_AS_AGREED"
+					},
+					"april": {
+						"monthType": "POSITIVE",
+						"value": "PAYS_AS_AGREED"
+					},
+					"may": {
+						"monthType": "POSITIVE",
+						"value": "PAYS_AS_AGREED"
+					},
+					"june": {
+						"monthType": "NO_DATA",
+						"value": "UNAVAILABLE"
+					},
+					"july": {
+						"monthType": "NO_DATA",
+						"value": "UNAVAILABLE"
+					},
+					"august": {
+						"monthType": "NO_DATA",
+						"value": "UNAVAILABLE"
+					},
+					"september": {
+						"monthType": "NO_DATA",
+						"value": "UNAVAILABLE"
+					},
+					"october": {
+						"monthType": "NO_DATA",
+						"value": "UNAVAILABLE"
+					},
+					"november": {
+						"monthType": "NO_DATA",
+						"value": "UNAVAILABLE"
+					},
+					"december": {
+						"monthType": "NO_DATA",
+						"value": "UNAVAILABLE"
+					}
+				}],
+				"trendedDataHistory": {
+					"name": null,
+					"trendedDataList": null
+				},
+				"isNegative": true
+			}
+		],
+		"otherAccounts": [{
+				"provider": "EFX",
+				"id": "749227047",
+				"accountOpen": false,
+				"accountName": "CAPITAL ONE BANK USA NA",
+				"contactInformation": {
+					"contactName": "CAPITAL ONE BANK USA NA",
+					"address": {
+						"country": {
+							"code": "USA",
+							"name": null
+						},
+						"line1": "PO BOX 85015",
+						"line2": null,
+						"line3": "RICHMOND",
+						"line4": "VA",
+						"line5": "232855075",
+						"firstReportedDate": null,
+						"lastReportedDate": null,
+						"phone": null
+					},
+					"phone": {
+						"countryCode": "1",
+						"areaCode": "800",
+						"exchange": "955",
+						"extension": "7070"
+					}
+				},
+				"accountNumber": "xxxxx 7142",
+				"accountStatus": "INCLUDED_IN_BANKRUPTCY",
+				"paymentResponsibility": "UNDESIGNATED",
+				"highCreditAmount": null,
+				"accountType": "OTHER",
+				"creditLimitAmount": null,
+				"termDurationMonths": 0,
+				"termFrequency": "UNKNOWN",
+				"dateOpened": 1451606400000,
+				"balanceAmount": null,
+				"reportedDate": 1638057600000,
+				"pastDueAmount": null,
+				"lastPaymentDate": null,
+				"actualPayment": null,
+				"monthlyPayment": null,
+				"lastActivityDate": null,
+				"majorDelinquencyFirstReportedDate": 1635724800000,
+				"monthsReviewed": 0,
+				"creditorClassification": "UNKNOWN",
+				"activityDesignator": "UNKNOWN",
+				"chargeOffAmount": null,
+				"deferredPaymentStartDate": null,
+				"balloonPaymentAmount": null,
+				"balloonPaymentDate": null,
+				"dateClosed": null,
+				"loanType": null,
+				"firstDelinquencyDate": 1475280000000,
+				"comments": [{
+						"code": "IL",
+						"description": "Bankruptcy chapter 7"
+					},
+					{
+						"code": "KC",
+						"description": "Bankruptcy discharged"
+					}
+				],
+				"paymentHistory": [],
+				"trendedDataHistory": {
+					"name": null,
+					"trendedDataList": null
+				},
+				"isNegative": true
+			},
+			{
+				"provider": "EFX",
+				"id": "1392161141",
+				"accountOpen": false,
+				"accountName": "CERTEGY",
+				"contactInformation": {
+					"contactName": "CERTEGY",
+					"address": {
+						"country": {
+							"code": "USA",
+							"name": null
+						},
+						"line1": "P.O. BOX 30046",
+						"line2": null,
+						"line3": "TAMPA",
+						"line4": "FL",
+						"line5": "33630",
+						"firstReportedDate": null,
+						"lastReportedDate": null,
+						"phone": null
+					},
+					"phone": {
+						"countryCode": "1",
+						"areaCode": "800",
+						"exchange": "437",
+						"extension": "5120"
+					}
+				},
+				"accountNumber": "xxxxxxxxxxxxxx 5000",
+				"accountStatus": "INCLUDED_IN_BANKRUPTCY",
+				"paymentResponsibility": "INDIVIDUAL",
+				"highCreditAmount": null,
+				"accountType": "OTHER",
+				"creditLimitAmount": null,
+				"termDurationMonths": 0,
+				"termFrequency": "UNKNOWN",
+				"dateOpened": 1533081600000,
+				"balanceAmount": null,
+				"reportedDate": 1638057600000,
+				"pastDueAmount": null,
+				"lastPaymentDate": null,
+				"actualPayment": null,
+				"monthlyPayment": null,
+				"lastActivityDate": null,
+				"majorDelinquencyFirstReportedDate": 1635724800000,
+				"monthsReviewed": 0,
+				"creditorClassification": "RETAIL",
+				"activityDesignator": "UNKNOWN",
+				"chargeOffAmount": null,
+				"deferredPaymentStartDate": null,
+				"balloonPaymentAmount": null,
+				"balloonPaymentDate": null,
+				"dateClosed": null,
+				"loanType": null,
+				"firstDelinquencyDate": 1533081600000,
+				"comments": [{
+						"code": "IL",
+						"description": "Bankruptcy chapter 7"
+					},
+					{
+						"code": "KC",
+						"description": "Bankruptcy discharged"
+					}
+				],
+				"paymentHistory": [],
+				"trendedDataHistory": {
+					"name": null,
+					"trendedDataList": null
+				},
+				"isNegative": true
+			}
+		],
+		"inquiries": [{
+				"provider": "EFX",
+				"id": null,
+				"type": "HARD",
+				"prefix": {
+					"code": "CR",
+					"description": "Credit Report (Including End User)"
+				},
+				"reportedDate": 1657929600000,
+				"contactInformation": {
+					"contactName": "AMERICREDIT FINANCIAL SERVICES",
+					"address": {
+						"country": {
+							"code": "USA",
+							"name": null
+						},
+						"line1": "200 BAILEY AVE",
+						"line2": null,
+						"line3": "FORT WORTH",
+						"line4": "TX",
+						"line5": "76107",
+						"firstReportedDate": null,
+						"lastReportedDate": null,
+						"phone": null
+					},
+					"phone": {
+						"countryCode": "1",
+						"areaCode": "817",
+						"exchange": "302",
+						"extension": "7424"
+					}
+				}
+			},
+			{
+				"provider": "EFX",
+				"id": null,
+				"type": "HARD",
+				"prefix": {
+					"code": "CR",
+					"description": "Credit Report (Including End User)"
+				},
+				"reportedDate": 1657929600000,
+				"contactInformation": {
+					"contactName": "COLUMBIA CHEVROLET",
+					"address": {
+						"country": {
+							"code": "USA",
+							"name": null
+						},
+						"line1": "9750 MONTGOMERY RD",
+						"line2": null,
+						"line3": "MONTGOMERY",
+						"line4": "OH",
+						"line5": "452427208",
+						"firstReportedDate": null,
+						"lastReportedDate": null,
+						"phone": null
+					},
+					"phone": {
+						"countryCode": "1",
+						"areaCode": "513",
+						"exchange": "891",
+						"extension": "7200"
+					}
+				}
+			},
+			{
+				"provider": "EFX",
+				"id": null,
+				"type": "HARD",
+				"prefix": {
+					"code": "CR",
+					"description": "Credit Report (Including End User)"
+				},
+				"reportedDate": 1657929600000,
+				"contactInformation": {
+					"contactName": "CAPITAL ONE",
+					"address": {
+						"country": {
+							"code": "USA",
+							"name": null
+						},
+						"line1": "15000 CAPITAL ONE DRIVE",
+						"line2": null,
+						"line3": "RICHMOND",
+						"line4": "VA",
+						"line5": "23238",
+						"firstReportedDate": null,
+						"lastReportedDate": null,
+						"phone": null
+					},
+					"phone": null
+				}
+			},
+			{
+				"provider": "EFX",
+				"id": null,
+				"type": "HARD",
+				"prefix": {
+					"code": "CR",
+					"description": "Credit Report (Including End User)"
+				},
+				"reportedDate": 1657929600000,
+				"contactInformation": {
+					"contactName": "HSBC AUTO FINANCE",
+					"address": {
+						"country": {
+							"code": "USA",
+							"name": null
+						},
+						"line1": "6602 CONVOY COURT",
+						"line2": null,
+						"line3": "SAN DIEGO",
+						"line4": "CA",
+						"line5": "92111",
+						"firstReportedDate": null,
+						"lastReportedDate": null,
+						"phone": null
+					},
+					"phone": {
+						"countryCode": "1",
+						"areaCode": "619",
+						"exchange": "793",
+						"extension": "6300"
+					}
+				}
+			}
+		],
+		"consumerStatements": [],
+		"publicRecords": {
+			"provider": "EFX",
+			"bankruptcies": [{
+					"id": null,
+					"filedDate": 1638057600000,
+					"reportedDate": 1647043200000,
+					"referenceNumber": null,
+					"dispositionStatus": {
+						"code": "DISCHARGED_CH_7",
+						"description": "The amount owed was included in the order of relief. Debtor no longer liable for debts listed in order of relief."
+					},
+					"courtName": "US BANKRUPTCY COURT-DAYTON",
+					"liability": null,
+					"exemptAmount": null,
+					"assetAmount": null
+				},
+				{
+					"id": null,
+					"filedDate": 1493596800000,
+					"reportedDate": 1587772800000,
+					"referenceNumber": null,
+					"dispositionStatus": {
+						"code": "DISCHARGED_CH_13",
+						"description": "Plan by debtor to pay percent of income over a period of years has been completed. Debtor no longer liable for debts listed in payment plan."
+					},
+					"courtName": "US BANKRUPTCY COURT-DAYTON",
+					"liability": null,
+					"exemptAmount": null,
+					"assetAmount": null
+				}
+			],
+			"judgments": [],
+			"liens": []
+		},
+		"collections": [{
+			"provider": "EFX",
+			"id": null,
+			"reportedDate": 1618790400000,
+			"assignedDate": 1509148800000,
+			"agencyClient": null,
+			"agencyContactInformation": {
+				"contactName": null,
+				"address": null,
+				"phone": null
+			},
+			"originalCreditorName": null,
+			"orginalAmountOwed": {
+				"amount": 50.0,
+				"currency": "USD"
+			},
+			"accountNumber": null,
+			"accountDesignatorCode": "INDIVIDUAL_ACCOUNT",
+			"balanceDate": null,
+			"statusDate": 1618790400000,
+			"status": "PAID",
+			"amount": {
+				"amount": 0.0,
+				"currency": "USD"
+			}
+		}]
+	}],
+	"id": "1BR:5a50a66fc76d--759c-424abbea-66f969ca",
+	"reportType": "US_EFX",
+	"generatedDate": 1659624499000
+}
