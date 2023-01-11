@@ -10,9 +10,7 @@ class BlackTextBody extends StatelessWidget {
       data,
       textAlign: TextAlign.center,
       style: const TextStyle(
-        fontStyle: FontStyle.normal,
-        fontSize: 20,
-      ),
+          fontStyle: FontStyle.normal, fontSize: 20, color: Colors.white),
     );
   }
 }

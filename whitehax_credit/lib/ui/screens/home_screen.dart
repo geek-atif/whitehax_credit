@@ -1,10 +1,16 @@
+import 'package:expansion_tile_card/expansion_tile_card.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_slider_drawer/flutter_slider_drawer.dart';
 import 'package:get/get.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
+import 'package:whitehax_credit/ui/styles/my_app_theme.dart';
 import '../../black_text_body.dart';
+import '../../black_text_body_med.dart';
 import '../../black_text_body_small.dart';
 import '../../controller/home_controller.dart';
+import '../../green_text_body_small.dart';
 import '../../pink_text_body.dart';
+import 'my_navigation_menu.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -14,9 +20,10 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  final GlobalKey<SliderDrawerState> keyLoader = GlobalKey<SliderDrawerState>();
   final HomeController _homeController = Get.put(HomeController());
   late List<ChartData> gameScoreChart = List.empty(growable: true);
-
+  final GlobalKey<ExpansionTileCardState> cardA = new GlobalKey();
   @override
   void initState() {
     // TODO: implement initState
@@ -34,201 +41,324 @@ class _HomeScreenState extends State<HomeScreen> {
     final screenSize = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
-        body: SingleChildScrollView(
-          child: ConstrainedBox(
-            constraints:
-                BoxConstraints(maxHeight: MediaQuery.of(context).size.height),
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Obx(
-                () => _homeController.isLoading.value
-                    ? Text(
-                        "Loading",
-                      )
-                    : Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          const SizedBox(
-                            height: 50,
-                          ),
-                          Expanded(
-                            flex: 0,
-                            child: Row(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                const BlackTextBody(
-                                  data: "Score - Equifar",
-                                ),
-                                const PinkTextBody(
-                                  data: "Download",
-                                )
-                              ],
-                            ),
-                          ),
-                          displayGraphScore("", gameScoreChart,
-                              _homeController.score.value.toDouble()),
-                          Expanded(
-                            flex: 0,
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.only(left: 20, right: 20),
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  BlackTextBody(data: "Updated"),
-                                  BlackTextBody(data: "FEB 15 , 2022")
-                                ],
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 20,
-                          ),
-                          Expanded(
-                            flex: 0,
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.only(left: 20, right: 20),
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  BlackTextBody(data: "Next Update"),
-                                  BlackTextBody(data: "MAR 15 , 2022")
-                                ],
-                              ),
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 20,
-                          ),
-                          Expanded(
-                            flex: 2,
-                            child: Padding(
-                              padding: const EdgeInsets.only(
-                                  left: 2, right: 2, top: 10, bottom: 5),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.only(
-                                        left: 8, right: 8, top: 5, bottom: 10),
-                                    child:
-                                        BlackTextBody(data: "Credit Accounts"),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.only(
-                                        left: 8, right: 8, top: 5, bottom: 10),
-                                    child: Text(
-                                        "Your Credit report includes information about your activity on your credit account that affects your credit score and rating.\nThe Table below is an overview of your current account and status."),
-                                  ),
-                                  tableHead(),
-                                  tableBody(
-                                      "ReWorking",
-                                      _homeController
-                                          .providerViews
-                                          .first
-                                          .summary
-                                          .revolvingAccounts
-                                          .balance
-                                          .amount,
-                                      _homeController
-                                          .providerViews
-                                          .first
-                                          .summary
-                                          .revolvingAccounts
-                                          .monthlyPaymentAmount
-                                          .amount),
-                                  tableBody(
-                                      "Mortgage",
-                                      _homeController
-                                          .providerViews
-                                          .first
-                                          .summary
-                                          .mortgageAccounts
-                                          .balance
-                                          .amount,
-                                      _homeController
-                                          .providerViews
-                                          .first
-                                          .summary
-                                          .mortgageAccounts
-                                          .monthlyPaymentAmount
-                                          .amount),
-                                  tableBody(
-                                      "Installment",
-                                      _homeController
-                                          .providerViews
-                                          .first
-                                          .summary
-                                          .installmentAccounts
-                                          .balance
-                                          .amount,
-                                      _homeController
-                                          .providerViews
-                                          .first
-                                          .summary
-                                          .installmentAccounts
-                                          .monthlyPaymentAmount
-                                          .amount),
-                                  tableBody(
-                                      "Other",
-                                      _homeController
-                                          .providerViews
-                                          .first
-                                          .summary
-                                          .mortgageAccounts
-                                          .balance
-                                          .amount,
-                                      _homeController
-                                          .providerViews
-                                          .first
-                                          .summary
-                                          .mortgageAccounts
-                                          .monthlyPaymentAmount
-                                          .amount),
-                                ],
-                              ),
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 20,
-                          ),
-                          // Expanded(
-                          //   flex: 2,
-                          //   child: Padding(
-                          //     padding: const EdgeInsets.only(
-                          //         left: 2, right: 2, top: 10),
-                          //     child: Column(
-                          //       mainAxisAlignment: MainAxisAlignment.start,
-                          //       crossAxisAlignment: CrossAxisAlignment.start,
-                          //       children: [
-                          //         Padding(
-                          //           padding: const EdgeInsets.only(
-                          //               left: 8, right: 8, top: 5, bottom: 10),
-                          //           child: BlackTextBody(
-                          //               data: "Other Credit Item"),
-                          //         ),
-                          //         Padding(
-                          //           padding: const EdgeInsets.only(
-                          //               left: 8, right: 8, top: 5, bottom: 10),
-                          //           child: Text(
-                          //               "Your Credit report includes information about instances of non-account items that may affect your credit score and rating.\nThe below info is summary of non-account related items of your report "),
-                          //         ),
-                          //       ],
-                          //     ),
-                          //   ),
-                          // ),
-                        ],
-                      ),
-              ),
+        backgroundColor: MyAppTheme.whitehaxBackgroundColor,
+        body: SliderDrawer(
+          appBar: const SliderAppBar(
+            appBarColor: MyAppTheme.whitehaxBackgroundColor,
+            title: BlackTextBody(
+              data: "Score - Equifar",
             ),
+            drawerIconColor: Colors.white,
+            appBarPadding: EdgeInsets.all(4),
+            appBarHeight: 65,
           ),
+          key: keyLoader,
+          slider: const MyNavigationMenu(),
+          child: SingleChildScrollView(
+            child: homeWidget(screenSize),
+          ),
+          splashColor: MyAppTheme.whitehaxBackgroundColor,
         ),
       ),
+    );
+  }
+
+  Container homeWidget(Size screenSize) {
+    return Container(
+      color: MyAppTheme.whitehaxBackgroundColor,
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Obx(
+          () => _homeController.isLoading.value
+              ? Text(
+                  "Loading",
+                )
+              : Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    displayGraphScore("", gameScoreChart,
+                        _homeController.score.value.toDouble()),
+
+//                     ExpansionTileCard(
+//                       baseColor: MyAppTheme.whitehaxBackgroundColor,
+//                       shadowColor: MyAppTheme.whitehaxBackgroundColor,
+//                       expandedColor: MyAppTheme.whitehaxBackgroundColor,
+//                       key: cardA,
+//                       title: Text(""),
+//                       leading: Padding(
+//                         padding: const EdgeInsets.all(8.0),
+//                         child: Row(
+//                           children: [
+//                             BlackTextBodyMed(data: "Your Loan Risk : "),
+//                             GreenTextBodySmall(data: "Very Low Risk")
+//                           ],
+//                         ),
+//                       ),
+//                       children: <Widget>[
+//                         Divider(
+//                           thickness: 1.0,
+//                           height: 1.0,
+//                         ),
+//                         Align(
+//                           alignment: Alignment.centerLeft,
+//                           child: Padding(
+//                             padding: const EdgeInsets.symmetric(
+//                               horizontal: 16.0,
+//                               vertical: 8.0,
+//                             ),
+//                             child: Text(
+//                               """Hi there, I'm a drop-in replacement for Flutter's ExpansionTile.
+
+// Use me any time you think your app could benefit from being just a bit more Material.
+
+// These buttons control the next card down!""",
+//                               style: Theme.of(context)
+//                                   .textTheme
+//                                   .bodyText2!
+//                                   .copyWith(fontSize: 16),
+//                             ),
+//                           ),
+//                         ),
+//                         ButtonBar(
+//                           alignment: MainAxisAlignment.spaceAround,
+//                           buttonHeight: 52.0,
+//                           buttonMinWidth: 90.0,
+//                           children: <Widget>[],
+//                         ),
+//                       ],
+//                     ),
+
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8.0, right: 8.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.green,
+                            ),
+                            borderRadius: BorderRadius.all(Radius.circular(8))),
+                        padding: const EdgeInsets.only(
+                            left: 8, right: 8, top: 10, bottom: 10),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            BlackTextBodyMed(data: "Your Loan Risk : "),
+                            GreenTextBodySmall(data: "Very Low Risk"),
+                            SizedBox(
+                              width: 5,
+                            ),
+                            Icon(
+                              Icons.info_outline,
+                              color: Colors.white54,
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Container(
+                      padding: EdgeInsets.only(top: 2),
+                      decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.white54,
+                          ),
+                          borderRadius: BorderRadius.all(Radius.circular(8))),
+                      height: screenSize.height * 0.14,
+                      width: screenSize.width * 1,
+                      child: customerDetails(),
+                    ),
+                    SizedBox(
+                      height: screenSize.height * 0.1,
+                      width: screenSize.width * 1,
+                      child: employmentHistory(),
+                    ),
+                    SizedBox(
+                      height: screenSize.height * 0.4,
+                      child: creditAccount(),
+                    ),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    // SizedBox(
+                    //   height: screenSize.height * 0.4,
+                    //   child: otherCreditItem(),
+                    // ),
+                  ],
+                ),
+        ),
+      ),
+    );
+  }
+
+  Column otherCreditItem() {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(left: 8, right: 8, top: 5, bottom: 10),
+          child: BlackTextBody(data: "Other Credit Item"),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 8, right: 8, top: 5, bottom: 10),
+          child: Text(
+              "Your Credit report includes information about instances of non-account items that may affect your credit score and rating.\nThe below info is summary of non-account related items of your report "),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 8, right: 8, top: 8),
+          child: Row(
+            children: [
+              BlackTextBodySmall(data: "Negative Accounts"),
+              BlackTextBodySmall(
+                  data:
+                      " : ${_homeController.providerViews.first.summary.totalNegativeAccounts}  Found"),
+            ],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 8, right: 8, top: 8),
+          child: Row(
+            children: [
+              BlackTextBodySmall(data: "Consumer Statements"),
+              BlackTextBodySmall(
+                  data:
+                      " : ${_homeController.providerViews.first.summary.totalConsumerStatements} Statment Found"),
+            ],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 8, right: 8, top: 8),
+          child: Row(
+            children: [
+              BlackTextBodySmall(data: "Personal Information"),
+              BlackTextBodySmall(
+                  data:
+                      " : ${_homeController.providerViews.first.summary.totalPersonalInformation} Item Found"),
+            ],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 8, right: 8, top: 8),
+          child: Row(
+            children: [
+              BlackTextBodySmall(data: "Inquiries"),
+              BlackTextBodySmall(
+                  data:
+                      " :  ${_homeController.providerViews.first.summary.totalInquires} Inquiries Found"),
+            ],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 8, right: 8, top: 8),
+          child: Row(
+            children: [
+              BlackTextBodySmall(data: "Public Records"),
+              BlackTextBodySmall(
+                  data:
+                      " : ${_homeController.providerViews.first.summary.totalPublicRecords} Records Found"),
+            ],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 8, right: 8, top: 8),
+          child: Row(
+            children: [
+              BlackTextBodySmall(data: "Collections"),
+              BlackTextBodySmall(
+                  data:
+                      " : ${_homeController.providerViews.first.summary.totalCollections} Collections Found"),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  Column employmentHistory() {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(left: 8, right: 8, top: 5, bottom: 10),
+          child: BlackTextBody(data: "Employment History"),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 8, right: 8, top: 5, bottom: 10),
+          child: BlackTextBodySmall(
+              data:
+                  "Employer Name : ${_homeController.providerViews.first.summary.subject.employmentHistory.first.employerName}"),
+        ),
+      ],
+    );
+  }
+
+  Column customerDetails() {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(left: 8, right: 8, top: 5, bottom: 10),
+          child: BlackTextBody(data: "Current Details"),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 8, right: 8, top: 5, bottom: 10),
+          child: BlackTextBodySmall(
+              data:
+                  "Name : ${_homeController.providerViews.first.summary.subject.currentName.firstName} ${_homeController.providerViews.first.summary.subject.currentName.lastName}"),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 8, right: 8, top: 5, bottom: 10),
+          child: BlackTextBodySmall(
+              data:
+                  "Address : ${_homeController.providerViews.first.summary.subject.currentAddress.line1} ${_homeController.providerViews.first.summary.subject.currentAddress.line3} , ${_homeController.providerViews.first.summary.subject.currentAddress.country.code}"),
+        ),
+      ],
+    );
+  }
+
+  Column creditAccount() {
+    return Column(
+      //mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(left: 8, right: 8, top: 5, bottom: 10),
+          child: BlackTextBody(data: "Accounts Details"),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 8, right: 8, top: 5, bottom: 10),
+          child: Text(
+              "Your Credit report includes information about your activity on your credit account that affects your credit score and rating.\nThe Table below is an overview of your current account and status."),
+        ),
+        tableHead(),
+        tableBody(
+            "ReWorking",
+            _homeController
+                .providerViews.first.summary.revolvingAccounts.balance.amount,
+            _homeController.providerViews.first.summary.revolvingAccounts
+                .monthlyPaymentAmount.amount),
+        tableBody(
+            "Mortgage",
+            _homeController
+                .providerViews.first.summary.mortgageAccounts.balance.amount,
+            _homeController.providerViews.first.summary.mortgageAccounts
+                .monthlyPaymentAmount.amount),
+        tableBody(
+            "Installment",
+            _homeController
+                .providerViews.first.summary.installmentAccounts.balance.amount,
+            _homeController.providerViews.first.summary.installmentAccounts
+                .monthlyPaymentAmount.amount),
+        tableBody(
+            "Other",
+            _homeController
+                .providerViews.first.summary.mortgageAccounts.balance.amount,
+            _homeController.providerViews.first.summary.mortgageAccounts
+                .monthlyPaymentAmount.amount),
+      ],
     );
   }
 
@@ -242,7 +372,7 @@ class _HomeScreenState extends State<HomeScreen> {
       padding: const EdgeInsets.only(left: 8.0, right: 8.0),
       child: Table(
         border: TableBorder.symmetric(
-          outside: const BorderSide(width: 1, color: Colors.white),
+          outside: const BorderSide(width: 1, color: Colors.black),
         ),
         children: [
           TableRow(children: [
@@ -266,10 +396,10 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Expanded displayGraphScore(
+  SizedBox displayGraphScore(
       String title, List<ChartData> totalScore, double maxValue) {
-    return Expanded(
-      flex: 3,
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.35,
       child: SfCircularChart(
         annotations: <CircularChartAnnotation>[
           CircularChartAnnotation(
@@ -311,8 +441,8 @@ class _HomeScreenState extends State<HomeScreen> {
       padding: const EdgeInsets.only(left: 8.0, right: 8.0),
       child: Table(
         border: TableBorder.symmetric(
-          inside: const BorderSide(width: 1, color: Colors.white),
-          outside: const BorderSide(width: 1, color: Colors.white),
+          inside: const BorderSide(width: 1, color: Colors.black),
+          outside: const BorderSide(width: 1, color: Colors.black),
         ),
         children: const [
           TableRow(children: [
