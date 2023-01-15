@@ -18,14 +18,14 @@ import '../widgets/dark_blue_button.dart';
 import 'loan_risk_range_dialog.dart';
 import 'my_navigation_menu.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class UserThridScreen extends StatefulWidget {
+  const UserThridScreen({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<UserThridScreen> createState() => _UserThridScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _UserThridScreenState extends State<UserThridScreen> {
   final GlobalKey<SliderDrawerState> keyLoader = GlobalKey<SliderDrawerState>();
   final HomeController _homeController = Get.put(HomeController());
   late List<ChartData> gameScoreChart = List.empty(growable: true);
@@ -63,9 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
           key: keyLoader,
           slider: const MyNavigationMenu(),
           child: SingleChildScrollView(
-            child: Obx(() => _homeController.isLoading.value
-                ? const Text("Loading....")
-                : homeWidget(screenSize)),
+            child: homeWidget(screenSize),
           ),
           splashColor: MyAppTheme.whitehaxBackgroundColor,
         ),
@@ -134,9 +132,8 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Column(
               children: [
                 BlackTextBodySmall(data: "Total Open Accounts"),
-                BlackTextBody(
-                    data:
-                        "${_homeController.providerViews.first.summary.totalOpenAccounts.totalAccounts}")
+                BlackTextBody(data: "1")
+                //_homeController.providerViews.first.summary.totalOpenAccounts.totalAccounts
               ],
             ),
           ),
@@ -150,10 +147,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 borderRadius: const BorderRadius.all(Radius.circular(8))),
             child: Column(
               // crossAxisAlignment: CrossAxisAlignment.center,
-              //_homeController.providerViews.first.summary.totalNegativeAccounts
               children: [
                 const RedTextBodySmall(data: "Total Negative Accounts"),
-                RedTextBody(data: "2"),
+                RedTextBody(data: "15"),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -201,7 +197,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Container(
       decoration: BoxDecoration(
           border: Border.all(
-            color: Colors.green,
+            color: Colors.red,
           ),
           borderRadius: BorderRadius.all(Radius.circular(8))),
       padding: const EdgeInsets.only(left: 8, right: 8, top: 10, bottom: 10),
@@ -209,7 +205,12 @@ class _HomeScreenState extends State<HomeScreen> {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           BlackTextBodyMed(data: "Your Loan Risk : "),
-          GreenTextBodySmall(data: "Very Low Risk"),
+          Text(
+            "Very High Risk",
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+                fontStyle: FontStyle.normal, fontSize: 16, color: Colors.red),
+          ),
           SizedBox(
             width: 5,
           ),
@@ -338,17 +339,16 @@ class _HomeScreenState extends State<HomeScreen> {
           padding: EdgeInsets.only(left: 8, right: 8, top: 5, bottom: 10),
           child: BlackTextBody(data: "Current Details"),
         ),
+        //${_homeController.providerViews.first.summary.subject.currentName.firstName} ${_homeController.providerViews.first.summary.subject.currentName.lastName}
         Padding(
           padding: const EdgeInsets.only(left: 8, right: 8, top: 5, bottom: 10),
-          child: BlackTextBodySmall(
-              data:
-                  "Name : ${_homeController.providerViews.first.summary.subject.currentName.firstName} ${_homeController.providerViews.first.summary.subject.currentName.lastName}"),
+          child: BlackTextBodySmall(data: "Name : Dave Dan"),
         ),
+        //${_homeController.providerViews.first.summary.subject.currentAddress.line1} ${_homeController.providerViews.first.summary.subject.currentAddress.line3} , ${_homeController.providerViews.first.summary.subject.currentAddress.country.code}
         Padding(
           padding: const EdgeInsets.only(left: 8, right: 8, top: 5, bottom: 10),
           child: BlackTextBodySmall(
-              data:
-                  "Address : ${_homeController.providerViews.first.summary.subject.currentAddress.line1} ${_homeController.providerViews.first.summary.subject.currentAddress.line3} , ${_homeController.providerViews.first.summary.subject.currentAddress.country.code}"),
+              data: "Address : 109 NERIEQAR DR CAEQRCLEVILE"),
         ),
       ],
     );
@@ -427,7 +427,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
                 pointers: const <GaugePointer>[
                   NeedlePointer(
-                    value: 850,
+                    value: 400,
                     knobStyle: KnobStyle(color: Colors.white),
                     needleColor: Colors.white,
                   )
@@ -435,11 +435,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 annotations: <GaugeAnnotation>[
                   GaugeAnnotation(
                       widget: Container(
-                          child: const Text('Score 850',
+                          child: const Text('Score 400',
                               style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.green))),
+                                  color: Colors.red))),
                       angle: 90,
                       positionFactor: 0.5)
                 ])

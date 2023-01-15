@@ -20,13 +20,11 @@ class MyNavigationMenu extends StatelessWidget {
             SizedBox(
               height: screenSize.height * 0.05,
             ),
-            InkWell(
-              onTap: () => Get.toNamed(MyRouter.homeScreen),
-              child: home(),
-            ),
-            InkWell(
-                onTap: () => Get.toNamed(MyRouter.accountCount),
-                child: accounts()),
+            home(),
+
+            // InkWell(
+            //     onTap: () => Get.toNamed(MyRouter.accountCount),
+            //     child: accounts()),
           ],
         ),
       ),
@@ -35,13 +33,26 @@ class MyNavigationMenu extends StatelessWidget {
 
   ExpansionTile home() {
     return ExpansionTile(
-      collapsedIconColor: Colors.white,
-      expandedCrossAxisAlignment: CrossAxisAlignment.start,
-      childrenPadding: const EdgeInsets.only(bottom: 10),
-      title: const BlackTextBody(
-        data: "Home",
-      ),
-    );
+        collapsedIconColor: Colors.white,
+        expandedCrossAxisAlignment: CrossAxisAlignment.start,
+        childrenPadding: const EdgeInsets.only(bottom: 10),
+        title: const BlackTextBody(
+          data: "Home",
+        ),
+        children: <Widget>[
+          InkWell(
+            onTap: () => Get.toNamed(MyRouter.homeScreen),
+            child: const BlackTextBody(data: "User1"),
+          ),
+          InkWell(
+            onTap: () => Get.toNamed(MyRouter.userSecondScreen),
+            child: const BlackTextBody(data: "User2"),
+          ),
+          InkWell(
+            onTap: () => Get.toNamed(MyRouter.userThridScreen),
+            child: const BlackTextBody(data: "User3"),
+          ),
+        ]);
   }
 
   ExpansionTile accounts() {

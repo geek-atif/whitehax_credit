@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class BlackTextBodySmall extends StatelessWidget {
+class RedTextBody extends StatelessWidget {
   final String data;
-  const BlackTextBodySmall({required this.data}) : super();
+  const RedTextBody({required this.data}) : super();
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +10,7 @@ class BlackTextBodySmall extends StatelessWidget {
       data,
       textAlign: TextAlign.center,
       style: const TextStyle(
-          fontStyle: FontStyle.normal, fontSize: 15, color: Colors.white),
+          fontStyle: FontStyle.normal, fontSize: 20, color: Colors.red),
     );
   }
 }
